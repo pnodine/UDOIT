@@ -5678,9 +5678,9 @@ class tableHasFixedWidth extends quailTableTest
 
 			$len = $table->attributes->length;
 
-			for ($i = 0; $i < $len; $i++) {
-				error_log( 'Attributes: '.print_r($table->attributes->item($i), true) );
-			}
+			// for ($i = 0; $i < $len; $i++) {
+			// 	error_log( 'Attributes: '.print_r($table->attributes->item($i), true) );
+			// }
 
 			if ( $table->hasAttribute('width') ) {
 				$set_width = trim( $table->getAttribute('width') );
