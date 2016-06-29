@@ -5674,7 +5674,8 @@ class tableHasFixedWidth extends quailTableTest
 
 			$dom = new DOMDocument();
 			$dom->appendChild( $dom->importNode($table, true));
-			print_r( 'Table: '.$dom->saveHTML(), true);
+			$innerHTML = $dom->saveHTML();
+			print_r( 'Table: '.$innterHTML, true);
 
 			$len = $table->attributes->length;
 
