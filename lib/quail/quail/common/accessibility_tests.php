@@ -5669,8 +5669,12 @@ class tableHasFixedWidth extends quailTableTest
 
 			}
 
-			error_log( print_r($table, true) );
-			error_log( 'Style: '.print_r($style, true) );
+			// error_log( print_r($table, true) );
+			// error_log( 'Style: '.print_r($style, true) );
+
+			$dom = new DOMDocument();
+			$dom->appendChild( $dom->importNode($table, true));
+			print_r( 'Table: '.$dom->saveHTML(), true);
 
 			$len = $table->attributes->length;
 
