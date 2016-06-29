@@ -5669,7 +5669,7 @@ class tableHasFixedWidth extends quailTableTest
 
 			}
 
-			// error_log( print_r($table, true) );
+			error_log( print_r($table, true) );
 			error_log( 'Style: '.print_r($style, true) );
 
 			$len = $table->attributes->length;
